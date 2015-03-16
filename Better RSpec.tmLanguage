@@ -82,10 +82,6 @@
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>#is_expected</string>
-		</dict>
-		<dict>
-			<key>include</key>
 			<string>source.ruby</string>
 		</dict>
 	</array>
@@ -200,7 +196,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b(expect|double|allow|let|expect_any_instance_of|allow_any_instance_of)\b</string>
+			<string>\b(expect|is_expected|double|allow|let|expect_any_instance_of|allow_any_instance_of)\b</string>
 		</dict>
 
 		<key>subject</key>
@@ -229,20 +225,6 @@
 			</dict>
 			<key>match</key>
 			<string>\b(subject)(?!\s*[{(])\b</string>
-		</dict>
-
-		<key>is_expected</key>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other.rspec</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>\b(is_expected!?)(?:\s*[({])</string>
 		</dict>
 	</dict>
 
